@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+  
+}
+
+.sidebar {
+  position: fixed;
+  width: 240px;
+  height: 100vh;
+  background-color: #121218;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 1px solid #2a2a3b;
+}
+
+main.conteudo {
+  margin-left: 240px;
+  padding: 40px;
+  flex-grow: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #00ffcc;
+
+  & img {
+    width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  }
+}
+
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-menu a, .footer a {
+  text-decoration: none;
+  color: #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover, .footer a:hover {
+  background-color: #2a2a3b;
+  color: #00ffcc;
+}
+
+.footer {
+  margin-top: auto;
+}
+ 
+.conteudo {
+  flex-grow: 1;
+  padding: 40px;
+}
+/* === Tabela da Galeria === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #121218;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+thead {
+  background-color: #1a1a2d;
+}
+
+th, td {
+  padding: 16px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+th {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 1px solid #2a2a3b;
+}
+
+td {
+  color: #ccc;
+  border-bottom: 1px solid #1e1e2f;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #161625;
+}
+
+tbody tr:hover {
+  background-color: #1f1f2f;
+}
+
+table img {
+  width: 100px;
+  height: auto;
+  border-radius: 6px;
+}
+/* === Gerador de Imagens === */
+
+.conteudo h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.conteudo p {
+  color: #bbb;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.conteudo img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.conteudo img:hover {
+  transform: scale(1.03);
+}
+/* === Formulário de Contato === */
+.contato-form {
+  background-color: #121218;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contato-form label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 16px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.contato-form input,
+.contato-form textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #1e1e2f;
+  border: 1px solid #2a2a3b;
+  border-radius: 8px;
+  color: #f5f5f5;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  outline: none;
+  border-color: #00ffcc;
+  background-color: #252538;
+}
+
+.contato-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #00ffcc;
+  color: #121218;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contato-form button:hover {
+  background-color: #00ddb3;
+}
+/* === Formulário da geração de imagem === */
+.formgeraracao {
+  background-color: #121218;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+}
+.formgeraracao input,
+.contato-form textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #1e1e2f;
+  border: 1px solid #2a2a3b;
+  border-radius: 8px;
+  color: #f5f5f5;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+
+}
+.formgeraracao button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #00ffcc;
+  color: #121218;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
